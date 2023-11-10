@@ -2,8 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {UserInfoService} from "../service/userInfo.service";
 import {ChatService} from "../service/chat.service";
 import {Router} from "@angular/router";
-import {MessageComponent} from "../message/message.component";
-import {AddFriendDialogComponent} from "../add-friend-dialog/addFriendDialog.component";
 import {MatDialog} from "@angular/material/dialog";
 import {AddChatDialogComponent} from "../add-chat-dialog/addChatDialog.component";
 

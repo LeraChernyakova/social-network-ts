@@ -64,7 +64,6 @@ export class UserPageComponent implements OnInit {
   }
 
   onFileSelected(event: Event) {
-    console.log('there');
     const inputElement = event.target as HTMLInputElement;
     if (inputElement.files && inputElement.files[0]) {
       const selectedFile = inputElement.files[0];

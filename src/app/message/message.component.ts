@@ -3,7 +3,6 @@ import {UserInfoService} from "../service/userInfo.service";
 import {ChatService} from "../service/chat.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Alert} from "../service/alert.service";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-message',

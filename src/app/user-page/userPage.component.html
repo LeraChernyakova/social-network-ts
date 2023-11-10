@@ -3,7 +3,7 @@
   <nav>
     <ul>
 
-      <li *ngIf="this.user.role === 'Администратор'">
+      <li *ngIf="this.user?.role === 'Администратор'">
         <a mat-button [href]="'http://localhost:3000'" target="_blank">Админ</a>
       </li>
       <li><a mat-button [routerLink]="'/user'">Моя страница</a></li>
@@ -17,18 +17,18 @@
 
 <mat-card class="user-profile">
   <mat-card-content class="user-info">
-    <img alt="User's Avatar" [src]="user.img">
+    <img alt="User's Avatar" [src]="user?.img">
   </mat-card-content>
   <mat-card-content class="user-details">
-    <h2>{{ user.FIO }}</h2>
-    <p>Дата рождения: {{ user.birth }}</p>
-    <p>Почта: {{ user.mail }}</p>
+    <h2>{{ user?.FIO }}</h2>
+    <p>Дата рождения: {{ user?.birth }}</p>
+    <p>Почта: {{ user?.mail }}</p>
   </mat-card-content>
   <mat-card-content>
     <div class="user-actions">
       <button mat-raised-button class="edit-photo-button" (click)="editPhoto()">Изменить фото</button>
       <input type="file" #fileInput (change)="onFileSelected($event)" accept="image/*" style="display: none">
-      <button mat-raised-button class="delete-photo-button" [disabled]="user.img === 'http://localhost:3000/img/delete.jpg'"(click)="deletePhoto()">
+      <button mat-raised-button class="delete-photo-button" [disabled]="user?.img === 'http://localhost:3000/img/delete.jpg'"(click)="deletePhoto()">
         Удалить фото
       </button>
     </div>

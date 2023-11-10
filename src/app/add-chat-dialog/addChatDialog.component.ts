@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import {UserInfoService} from "../service/userInfo.service";
-import {Socket} from "socket.io-client";
-import { fromEvent } from 'rxjs';
-import {FriendsService} from "../service/friends.service";
 import {Alert} from "../service/alert.service";
 import {ChatService} from "../service/chat.service";
 import {Router} from "@angular/router";
